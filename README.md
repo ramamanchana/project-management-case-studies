@@ -24,19 +24,31 @@ The project focuses on the integration of advanced technologies like ML, DL, and
 
 
 **Getting Started**
+
         Clone the Repository:
+        
         sh
+        
         Copy code
+        
         git clone https://github.com/ramamanchana/project-management-case-studies.git
+        
         cd project-management-case-studies
 
 **Install Dependencies:**
         sh
+        
         Copy code
+        
         pip install pandas scikit-learn statsmodels
+        
         Run the Code:
+        
         Each use case is implemented in a separate Python script. You can run them individually to see the results.
+        
 **Contributions**
+
         Contributions are welcome! Please open an issue or submit a pull request for any improvements or new use cases.
 **License**
+
         This project is licensed under the MIT License.
