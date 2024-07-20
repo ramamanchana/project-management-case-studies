@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 
 # Sample Data
@@ -28,3 +29,12 @@ new_data = pd.DataFrame({
 # Prediction
 predicted_transition = model.predict(new_data)
 print(f"Predicted Transition Smoothness: {predicted_transition[0]}")
+
+# Plot
+plt.bar(df.index, df['transition_smoothness'], color='blue', label='Actual')
+plt.bar(new_data.index, predicted_transition, color='red', label='Predicted')
+plt.xlabel('Index')
+plt.ylabel('Transition Smoothness')
+plt.title('Smooth Transition Management')
+plt.legend()
+plt.show()
