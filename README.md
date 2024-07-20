@@ -27,7 +27,7 @@ The project focuses on the integration of advanced technologies like ML, DL, and
         Clone the Repository:
         sh
         Copy code
-        git clone https://github.com/yourusername/project-management-case-studies.git
+        git clone https://github.com/ramamanchana/project-management-case-studies.git
         cd project-management-case-studies
 
 **Install Dependencies:**
