@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 # Sample Data
@@ -18,3 +19,12 @@ fit = model.fit()
 # Prediction
 predictions = fit.forecast(3)
 print(f"Predicted Schedule Adherence: \n{predictions}")
+
+# Plot
+plt.plot(df.index, df['construction_activity_data'], label='Actual')
+plt.plot(predictions.index, predictions, label='Predicted', linestyle='--')
+plt.xlabel('Date')
+plt.ylabel('Construction Activity')
+plt.title('Construction Activity Prediction')
+plt.legend()
+plt.show()
