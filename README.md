@@ -9,7 +9,9 @@ The project focuses on the integration of advanced technologies like ML, DL, and
 **Benefits**
 
 **Enhanced Predictive Capabilities:** Improve accuracy in forecasting project timelines, budgets, and risks.
+
 **Operational Efficiency:** Automate routine tasks and provide real-time insights for better decision-making.
+
 **Quality Assurance: **Maintain high-quality standards and ensure compliance throughout the project lifecycle.
 **Cost Savings:** Optimize resource allocation and control budgets effectively to reduce costs.
 **Risk Mitigation: **Identify and mitigate potential risks proactively to minimize disruptions.
