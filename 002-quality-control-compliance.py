@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 
 # Sample Data
@@ -30,3 +31,12 @@ new_data = pd.DataFrame({
 # Prediction
 predicted_compliance = model.predict(new_data)
 print(f"Predicted Quality Compliance: {predicted_compliance[0]}")
+
+# Plot
+plt.bar(df.index, df['quality_compliance'], color='blue', label='Actual')
+plt.bar(new_data.index, predicted_compliance, color='red', label='Predicted')
+plt.xlabel('Index')
+plt.ylabel('Quality Compliance')
+plt.title('Quality Compliance Prediction')
+plt.legend()
+plt.show()
