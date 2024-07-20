@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.ensemble import GradientBoostingClassifier
 
 # Sample Data
@@ -30,3 +31,12 @@ new_data = pd.DataFrame({
 # Prediction
 predicted_risks = model.predict(new_data)
 print(f"Predicted Potential Risks: {predicted_risks[0]}")
+
+# Plot
+plt.bar(df.index, df['potential_risks'], color='blue', label='Actual')
+plt.bar(new_data.index, predicted_risks, color='red', label='Predicted')
+plt.xlabel('Index')
+plt.ylabel('Potential Risks')
+plt.title('Risk Identification and Mitigation')
+plt.legend()
+plt.show()
