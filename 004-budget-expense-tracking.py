@@ -1,15 +1,22 @@
-# Explanation
-# Sample Data Creation: The script creates a sample dataset containing budget records, project expenses, and financial data over a period of 100 months. This dataset is saved as budget_forecasting.csv.
-# Data Loading and Plotting: The script reads the sample data from the CSV file and plots the budget records, project expenses, and financial data to visualize the time series.
-# Train-Test Split: The data is split into training and testing sets for model evaluation.
-# Model Definition and Training: An ARIMA model is defined and trained on the training set to forecast project expenses.
-# Forecasting and Evaluation: The model forecasts project expenses for the test period. The forecast mean and confidence intervals are extracted. The mean squared error is calculated to evaluate the model's performance.
-# Plotting the Forecast: The forecasted values are plotted alongside the actual values for the test period, with confidence intervals shown.
-# Identifying Cost-Saving Opportunities: Residuals (differences between actual and forecasted values) are calculated, and positive residuals are identified as cost-saving opportunities.
-# Visualizing Cost-Saving Opportunities: A bar plot is created to visualize the identified cost-saving opportunities.
+# Case Study: Budget Forecasting and Expense Tracking in Construction Activities
 
-# Before running the script, ensure you have the necessary libraries installed:
-# pip install pandas numpy matplotlib seaborn statsmodels
+"""
+Description:
+Utilizing time-series analysis models to forecast project budgets and track expenses, ensuring cost control and financial efficiency. Predictive models help identify potential budget overruns early, allowing for timely adjustments and cost-saving measures.
+
+Model: Time-series Analysis
+
+Data Input: Budget records, project expenses, financial data
+
+Prediction: Budget forecasts, cost-saving opportunities
+
+Recommended Model: Time-series Analysis for budget control
+
+Customer Value Benefits: Cost Savings, Timely Delivery
+
+Use Case Implementation:
+By accurately forecasting project expenses and identifying potential cost-saving opportunities, project managers can maintain tighter control over budgets, leading to significant cost savings and more efficient use of resources.
+"""
 
 import pandas as pd
 import numpy as np
